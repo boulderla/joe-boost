@@ -7,6 +7,7 @@ import { Services } from "@/components/site/Services";
 import { Projects } from "@/components/site/Projects";
 import { Process } from "@/components/site/Process";
 import { Founder } from "@/components/site/Founder";
+import { IntroVideo } from "@/components/site/IntroVideo";
 import { FinalCTA } from "@/components/site/FinalCTA";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { StickyCallButton } from "@/components/site/StickyCallButton";
@@ -43,6 +44,7 @@ function Index() {
         <TrustedBy />
         <Services />
         <Projects />
+        <IntroVideo />
         <Founder />
         <Process />
         <FinalCTA />
