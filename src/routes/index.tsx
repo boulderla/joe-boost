@@ -6,6 +6,7 @@ import { TrustedBy } from "@/components/site/TrustedBy";
 import { Services } from "@/components/site/Services";
 import { Projects } from "@/components/site/Projects";
 import { Process } from "@/components/site/Process";
+import { Founder } from "@/components/site/Founder";
 import { FinalCTA } from "@/components/site/FinalCTA";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { StickyCallButton } from "@/components/site/StickyCallButton";
