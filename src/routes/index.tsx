@@ -43,6 +43,7 @@ function Index() {
         <TrustedBy />
         <Services />
         <Projects />
+        <Founder />
         <Process />
         <FinalCTA />
       </main>
