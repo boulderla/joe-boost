@@ -14,7 +14,7 @@ export function Hero() {
           width={1920}
           height={1080}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-foreground/85 via-foreground/65 to-foreground/90" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/70 to-black/40" />
       </div>
 
       <div className="mx-auto max-w-7xl px-6 lg:px-10 py-24 w-full">
