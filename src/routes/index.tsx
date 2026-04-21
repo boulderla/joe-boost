@@ -1,26 +1,52 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { SiteHeader } from "@/components/site/SiteHeader";
+import { Hero } from "@/components/site/Hero";
+import { TrustBar } from "@/components/site/TrustBar";
+import { TrustedBy } from "@/components/site/TrustedBy";
+import { Services } from "@/components/site/Services";
+import { Projects } from "@/components/site/Projects";
+import { Process } from "@/components/site/Process";
+import { FinalCTA } from "@/components/site/FinalCTA";
+import { SiteFooter } from "@/components/site/SiteFooter";
+import { StickyCallButton } from "@/components/site/StickyCallButton";
+import { useReveal } from "@/hooks/use-reveal";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Boulder Builders — Commercial & Residential Construction Done Right" },
+      {
+        name: "description",
+        content:
+          "Licensed & insured construction. Remodels, additions, painting & commercial build-outs. Built to last. Call (661) 287-0001 for a free quote.",
+      },
+      { property: "og:title", content: "Boulder Builders — Construction Done Right" },
+      {
+        property: "og:description",
+        content:
+          "Residential remodels, additions, painting, and commercial build-outs. Free quote: (661) 287-0001.",
+      },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
+function Index() {
+  useReveal();
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="min-h-screen bg-background">
+      <SiteHeader />
+      <main>
+        <Hero />
+        <TrustBar />
+        <TrustedBy />
+        <Services />
+        <Projects />
+        <Process />
+        <FinalCTA />
+      </main>
+      <SiteFooter />
+      <StickyCallButton />
     </div>
   );
-}
-
-function Index() {
-  return <PlaceholderIndex />;
 }
