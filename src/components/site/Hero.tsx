@@ -24,11 +24,11 @@ export function Hero() {
             Licensed & Insured Contractor
           </div>
 
-          <h1 className="reveal font-display text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold text-background leading-[0.95] text-balance">
+          <h1 className="reveal font-display text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold text-white leading-[0.95] text-balance drop-shadow-[0_2px_20px_rgba(0,0,0,0.4)]">
             Commercial & Residential <span className="text-brand">Construction</span> Done Right.
           </h1>
 
-          <p className="reveal mt-8 text-lg sm:text-xl text-background/80 max-w-xl">
+          <p className="reveal mt-8 text-lg sm:text-xl text-white/90 max-w-xl drop-shadow-[0_2px_12px_rgba(0,0,0,0.4)]">
             Remodels. Additions. Painting. Built to last.
           </p>
 
