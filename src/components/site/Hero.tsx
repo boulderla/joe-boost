@@ -14,7 +14,7 @@ export function Hero() {
           width={1920}
           height={1080}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-foreground/85 via-foreground/65 to-foreground/90" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/70 to-black/40" />
       </div>
 
       <div className="mx-auto max-w-7xl px-6 lg:px-10 py-24 w-full">
@@ -24,11 +24,11 @@ export function Hero() {
             Licensed & Insured Contractor
           </div>
 
-          <h1 className="reveal font-display text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold text-background leading-[0.95] text-balance">
+          <h1 className="reveal font-display text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold text-white leading-[0.95] text-balance drop-shadow-[0_2px_20px_rgba(0,0,0,0.4)]">
             Commercial & Residential <span className="text-brand">Construction</span> Done Right.
           </h1>
 
-          <p className="reveal mt-8 text-lg sm:text-xl text-background/80 max-w-xl">
+          <p className="reveal mt-8 text-lg sm:text-xl text-white/90 max-w-xl drop-shadow-[0_2px_12px_rgba(0,0,0,0.4)]">
             Remodels. Additions. Painting. Built to last.
           </p>
 
