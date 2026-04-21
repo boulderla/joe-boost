@@ -1,7 +1,12 @@
-import { Play } from "lucide-react";
+import { useState } from "react";
+import { Play, X } from "lucide-react";
 import thumb from "@/assets/video-thumbnail.jpg";
 
+const YOUTUBE_ID = "28f9BDfd_ho";
+
 export function IntroVideo() {
+  const [open, setOpen] = useState(false);
+
   return (
     <section id="intro-video" className="bg-background py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
@@ -20,6 +25,7 @@ export function IntroVideo() {
 
         <button
           type="button"
+          onClick={() => setOpen(true)}
           aria-label="Play company intro video"
           className="reveal group relative block w-full overflow-hidden rounded-3xl shadow-elevated focus:outline-none focus-visible:ring-4 focus-visible:ring-brand/50"
         >
@@ -51,12 +57,40 @@ export function IntroVideo() {
                 Meet Boulder Builders
               </p>
             </div>
-            <span className="hidden sm:inline-flex items-center gap-2 rounded-full bg-white/10 backdrop-blur px-4 py-2 text-xs font-medium text-white border border-white/20">
-              2:14
-            </span>
           </div>
         </button>
       </div>
+
+      {open && (
+        <div
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 backdrop-blur-sm p-4 sm:p-8 animate-in fade-in duration-200"
+          onClick={() => setOpen(false)}
+          role="dialog"
+          aria-modal="true"
+          aria-label="Company intro video"
+        >
+          <button
+            type="button"
+            onClick={() => setOpen(false)}
+            aria-label="Close video"
+            className="absolute top-4 right-4 sm:top-6 sm:right-6 inline-flex h-12 w-12 items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors backdrop-blur"
+          >
+            <X className="h-6 w-6" />
+          </button>
+          <div
+            className="relative w-full max-w-6xl aspect-video rounded-2xl overflow-hidden shadow-elevated"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <iframe
+              src={`https://www.youtube.com/embed/${YOUTUBE_ID}?autoplay=1&rel=0`}
+              title="Boulder Builders Intro"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="absolute inset-0 h-full w-full"
+            />
+          </div>
+        </div>
+      )}
     </section>
   );
 }
