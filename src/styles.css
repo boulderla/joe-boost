@@ -72,12 +72,12 @@
 
 :root {
   --radius: 0.5rem;
-  /* Dark navy-charcoal base with white text */
-  --background: oklch(0.18 0.02 255);
+  /* Dark slate/charcoal #1F2A35 - #26313B with white text */
+  --background: oklch(0.265 0.015 240);
   --foreground: oklch(0.985 0 0);
-  --card: oklch(0.22 0.022 255);
+  --card: oklch(0.305 0.015 240);
   --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.22 0.022 255);
+  --popover: oklch(0.305 0.015 240);
   --popover-foreground: oklch(0.985 0 0);
   --primary: oklch(0.985 0 0);
   --primary-foreground: oklch(0.18 0.02 255);
