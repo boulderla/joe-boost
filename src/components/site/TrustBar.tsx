@@ -1,8 +1,7 @@
-import { ShieldCheck, Zap, MapPin, Hammer } from "lucide-react";
+import { ShieldCheck, MapPin, Hammer } from "lucide-react";
 
 const items = [
   { icon: ShieldCheck, label: "Licensed & Insured" },
-  { icon: Zap, label: "Fast Turnaround" },
   { icon: MapPin, label: "Serving the Local Area" },
   { icon: Hammer, label: "Quality Workmanship" },
 ];
