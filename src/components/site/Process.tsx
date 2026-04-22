@@ -7,7 +7,7 @@ const steps = [
 
 export function Process() {
   return (
-    <section id="process" className="py-24 lg:py-36 bg-foreground text-background">
+    <section id="process" className="py-24 lg:py-36 bg-card text-card-foreground">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="max-w-2xl mb-16 reveal">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-brand mb-4">
@@ -18,18 +18,18 @@ export function Process() {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-px bg-background/10 border border-background/10 rounded-2xl overflow-hidden">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-px bg-border border border-border rounded-2xl overflow-hidden">
           {steps.map((s) => (
             <div
               key={s.n}
-              className="reveal bg-foreground p-8 lg:p-10 hover:bg-background/5 transition-colors min-h-[220px] flex flex-col justify-between"
+              className="reveal bg-card p-8 lg:p-10 hover:bg-secondary transition-colors min-h-[220px] flex flex-col justify-between"
             >
               <span className="font-display text-5xl font-bold text-brand">{s.n}</span>
               <div>
-                <h3 className="font-display text-xl font-bold text-background mb-2">
+                <h3 className="font-display text-xl font-bold text-card-foreground mb-2">
                   {s.title}
                 </h3>
-                <p className="text-sm text-background/60">{s.desc}</p>
+                <p className="text-sm text-muted-foreground">{s.desc}</p>
               </div>
             </div>
           ))}
