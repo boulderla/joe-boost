@@ -19,7 +19,7 @@ export function Hero() {
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-10 py-24 w-full">
         <div className="max-w-4xl">
-          <div className="inline-flex items-center gap-2 rounded-full border border-background/20 bg-background/10 backdrop-blur px-4 py-1.5 text-xs font-medium uppercase tracking-[0.2em] text-background/90 mb-8 reveal">
+          <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 backdrop-blur px-4 py-1.5 text-xs font-medium uppercase tracking-[0.2em] text-white/90 mb-8 reveal">
             <span className="h-1.5 w-1.5 rounded-full bg-brand" />
             Licensed & Insured Contractor
           </div>
@@ -42,7 +42,7 @@ export function Hero() {
             </a>
             <a
               href="#quote"
-              className="group inline-flex items-center justify-center gap-2 rounded-full border border-background/30 bg-background/5 backdrop-blur px-8 py-4 text-base font-semibold text-background hover:bg-background hover:text-foreground transition-all"
+              className="group inline-flex items-center justify-center gap-2 rounded-full border border-white/30 bg-white/5 backdrop-blur px-8 py-4 text-base font-semibold text-white hover:bg-white hover:text-foreground transition-all"
             >
               Get Free Quote
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
