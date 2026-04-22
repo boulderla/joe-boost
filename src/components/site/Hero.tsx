@@ -5,19 +5,19 @@ const PHONE_HREF = "tel:+16612870001";
 
 export function Hero() {
   return (
-    <section id="top" className="relative min-h-screen flex items-center pt-20">
-      <div className="absolute inset-0 -z-10">
+    <section id="top" className="relative min-h-screen flex items-center pt-20 overflow-hidden isolate">
+      <div className="absolute inset-0 z-0">
         <img
           src={hero}
           alt="Modern luxury home built by Boulder Builders"
-          className="h-full w-full object-cover"
+          className="absolute inset-0 h-full w-full object-cover"
           width={1920}
           height={1080}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/70 to-black/40" />
       </div>
 
-      <div className="mx-auto max-w-7xl px-6 lg:px-10 py-24 w-full">
+      <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-10 py-24 w-full">
         <div className="max-w-4xl">
           <div className="inline-flex items-center gap-2 rounded-full border border-background/20 bg-background/10 backdrop-blur px-4 py-1.5 text-xs font-medium uppercase tracking-[0.2em] text-background/90 mb-8 reveal">
             <span className="h-1.5 w-1.5 rounded-full bg-brand" />
