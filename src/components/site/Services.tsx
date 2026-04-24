@@ -15,7 +15,7 @@ export function Services() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-6 lg:gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8 max-w-3xl mx-auto">
           <ServiceImageCard
             src={residentialImg}
             alt="Residential construction — kitchen and bathroom remodels, room additions, and painting"
