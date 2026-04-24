@@ -49,13 +49,6 @@ export function SiteHeader() {
           </a>
         </nav>
 
-        <a
-          href={PHONE_HREF}
-          className="hidden sm:inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:bg-primary/90 transition-all hover:scale-[1.02] shadow-card"
-        >
-          <Phone className="h-4 w-4" />
-          <span>{PHONE}</span>
-        </a>
       </div>
     </header>
   );
