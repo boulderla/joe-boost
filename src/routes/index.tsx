@@ -5,12 +5,9 @@ import { TrustBar } from "@/components/site/TrustBar";
 import { TrustedBy } from "@/components/site/TrustedBy";
 import { Services } from "@/components/site/Services";
 import { Projects } from "@/components/site/Projects";
-import { Process } from "@/components/site/Process";
 import { Founder } from "@/components/site/Founder";
 import { IntroVideo } from "@/components/site/IntroVideo";
-import { FinalCTA } from "@/components/site/FinalCTA";
 import { SiteFooter } from "@/components/site/SiteFooter";
-import { StickyCallButton } from "@/components/site/StickyCallButton";
 import { useReveal } from "@/hooks/use-reveal";
 
 export const Route = createFileRoute("/")({
@@ -46,11 +43,8 @@ function Index() {
         <Projects />
         <IntroVideo />
         <Founder />
-        <Process />
-        <FinalCTA />
       </main>
       <SiteFooter />
-      <StickyCallButton />
     </div>
   );
 }
