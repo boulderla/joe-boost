@@ -14,9 +14,9 @@ const brands = [
 
 export function TrustedBy() {
   return (
-    <section className="py-20 lg:py-28">
+    <section className="py-20 lg:py-28 bg-white text-slate-900">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
-        <p className="reveal text-center text-xs font-semibold uppercase tracking-[0.3em] text-muted-foreground">
+        <p className="reveal text-center text-xs font-semibold uppercase tracking-[0.3em] text-slate-600">
           Trusted by Leading Brands
         </p>
 
