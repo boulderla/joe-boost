@@ -1,9 +1,5 @@
 import { useEffect, useState } from "react";
-import { Phone } from "lucide-react";
 import logo from "@/assets/bb-logo.jpeg";
-
-const PHONE = "(661) 287-0001";
-const PHONE_HREF = "tel:+16612870001";
 
 export function SiteHeader() {
   const [scrolled, setScrolled] = useState(false);
