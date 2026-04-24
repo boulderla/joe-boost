@@ -15,7 +15,7 @@ export function Services() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8 max-w-3xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-2xl lg:max-w-3xl mx-auto items-start">
           <ServiceImageCard
             src={residentialImg}
             alt="Residential construction — kitchen and bathroom remodels, room additions, and painting"
@@ -33,12 +33,14 @@ export function Services() {
 function ServiceImageCard({ src, alt }: { src: string; alt: string }) {
   return (
     <div className="reveal group relative overflow-hidden rounded-2xl border border-border bg-background shadow-card transition-all hover:shadow-elevated hover:-translate-y-1">
-      <img
-        src={src}
-        alt={alt}
-        loading="lazy"
-        className="block w-full h-auto aspect-[3/4] object-cover object-center transition-transform duration-700 group-hover:scale-[1.02]"
-      />
+      <div className="aspect-[3/4] w-full">
+        <img
+          src={src}
+          alt={alt}
+          loading="lazy"
+          className="block h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-[1.02]"
+        />
+      </div>
     </div>
   );
 }
