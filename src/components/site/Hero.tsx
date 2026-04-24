@@ -1,4 +1,4 @@
-import { Phone, ArrowRight } from "lucide-react";
+import { Phone } from "lucide-react";
 import hero from "@/assets/hero-construction.jpg";
 
 const PHONE_HREF = "tel:+16612870001";
@@ -35,13 +35,6 @@ export function Hero() {
             >
               <Phone className="h-5 w-5" />
               Call Now (661) 287-0001
-            </a>
-            <a
-              href="#quote"
-              className="group inline-flex items-center justify-center gap-2 rounded-full border border-white/30 bg-white/5 backdrop-blur px-8 py-4 text-base font-semibold text-white hover:bg-white/10 hover:text-white transition-all"
-            >
-              Get Free Quote
-              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </a>
           </div>
         </div>
