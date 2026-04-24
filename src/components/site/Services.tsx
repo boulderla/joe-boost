@@ -37,7 +37,7 @@ function ServiceImageCard({ src, alt }: { src: string; alt: string }) {
         src={src}
         alt={alt}
         loading="lazy"
-        className="block w-full h-auto object-cover transition-transform duration-700 group-hover:scale-[1.02]"
+        className="block w-full h-[420px] sm:h-[480px] md:h-[520px] lg:h-[600px] object-cover object-center transition-transform duration-700 group-hover:scale-[1.02]"
       />
     </div>
   );
