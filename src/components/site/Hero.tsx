@@ -19,10 +19,6 @@ export function Hero() {
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-10 py-24 w-full">
         <div className="max-w-4xl">
-          <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 backdrop-blur px-4 py-1.5 text-xs font-medium uppercase tracking-[0.2em] text-white/90 mb-8 reveal">
-            <span className="h-1.5 w-1.5 rounded-full bg-brand" />
-            Licensed & Insured Contractor
-          </div>
 
           <h1 className="reveal font-display text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold text-white leading-[0.95] text-balance drop-shadow-[0_2px_20px_rgba(0,0,0,0.4)]">
             Commercial & Residential <span className="text-brand">Construction</span> Done Right.
