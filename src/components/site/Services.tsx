@@ -15,7 +15,7 @@ export function Services() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+        <div className="grid grid-cols-2 gap-3 sm:gap-6 lg:gap-8 max-w-4xl mx-auto">
           <ServiceImageCard
             src={residentialImg}
             alt="Residential construction — kitchen and bathroom remodels, room additions, and painting"
@@ -37,7 +37,7 @@ function ServiceImageCard({ src, alt }: { src: string; alt: string }) {
         src={src}
         alt={alt}
         loading="lazy"
-        className="block w-full h-[420px] sm:h-[480px] md:h-[520px] lg:h-[600px] object-cover object-center transition-transform duration-700 group-hover:scale-[1.02]"
+        className="block w-full h-auto object-cover transition-transform duration-700 group-hover:scale-[1.02]"
       />
     </div>
   );
