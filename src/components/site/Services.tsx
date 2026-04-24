@@ -21,8 +21,8 @@ export function Services() {
             What We Build
           </p>
           <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground text-balance">
-            Two specialties. <br />
-            One standard of quality.
+            Superior Craftsmanship, <br />
+            Commercial or Residential
           </h2>
         </div>
 
