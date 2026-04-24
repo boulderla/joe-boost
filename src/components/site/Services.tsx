@@ -1,16 +1,5 @@
-import { Home, Building2, Check } from "lucide-react";
-
-const residential = [
-  "Kitchen & Bathroom Remodels",
-  "Room Additions & ADUs",
-  "Painting",
-];
-
-const commercial = [
-  "Tenant Improvements",
-  "Office Build-Outs",
-  "Maintenance & Renovations",
-];
+import residentialImg from "@/assets/bb_residential.png";
+import commercialImg from "@/assets/bb_commercial.png";
 
 export function Services() {
   return (
@@ -26,18 +15,14 @@ export function Services() {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
-          <ServiceCard
-            icon={Home}
-            tag="Residential"
-            title="Built for the way you live."
-            items={residential}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+          <ServiceImageCard
+            src={residentialImg}
+            alt="Residential construction — kitchen and bathroom remodels, room additions, and painting"
           />
-          <ServiceCard
-            icon={Building2}
-            tag="Commercial"
-            title="Built for the way you work."
-            items={commercial}
+          <ServiceImageCard
+            src={commercialImg}
+            alt="Commercial construction — tenant improvements, restaurant build-outs, maintenance and renovations"
           />
         </div>
       </div>
@@ -45,42 +30,15 @@ export function Services() {
   );
 }
 
-function ServiceCard({
-  icon: Icon,
-  tag,
-  title,
-  items,
-}: {
-  icon: typeof Home;
-  tag: string;
-  title: string;
-  items: string[];
-}) {
+function ServiceImageCard({ src, alt }: { src: string; alt: string }) {
   return (
-    <div className="reveal group relative overflow-hidden rounded-2xl bg-background border border-border p-8 lg:p-12 transition-all hover:shadow-elevated hover:-translate-y-1">
-      <div className="flex items-center gap-3 mb-8">
-        <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-foreground text-background">
-          <Icon className="h-6 w-6" />
-        </div>
-        <span className="text-xs font-semibold uppercase tracking-[0.25em] text-muted-foreground">
-          {tag}
-        </span>
-      </div>
-
-      <h3 className="font-display text-3xl lg:text-4xl font-bold text-foreground text-balance mb-10">
-        {title}
-      </h3>
-
-      <ul className="space-y-4">
-        {items.map((item) => (
-          <li key={item} className="flex items-center gap-3 text-base text-foreground">
-            <Check className="h-5 w-5 text-brand shrink-0" />
-            {item}
-          </li>
-        ))}
-      </ul>
-
-      <div className="absolute -bottom-20 -right-20 h-48 w-48 rounded-full bg-brand/5 group-hover:bg-brand/10 transition-colors" />
+    <div className="reveal group relative overflow-hidden rounded-2xl border border-border bg-background shadow-card transition-all hover:shadow-elevated hover:-translate-y-1">
+      <img
+        src={src}
+        alt={alt}
+        loading="lazy"
+        className="block w-full h-auto object-cover transition-transform duration-700 group-hover:scale-[1.02]"
+      />
     </div>
   );
 }
