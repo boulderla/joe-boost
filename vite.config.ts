@@ -20,10 +20,10 @@ function staticHtmlPlugin(): Plugin {
 
       const cssLinks = files
         .filter((file) => file.type === "asset" && file.fileName.startsWith("assets/") && file.fileName.endsWith(".css"))
-        .map((file) => `    <link rel="stylesheet" href="./${file.fileName}" />`)
+        .map((file) => `    <link rel="stylesheet" href="/${file.fileName}" />`)
         .join("\n");
 
-      const script = `    <script type="module" src="./${entry.fileName}"></script>`;
+      const script = `    <script type="module" src="/${entry.fileName}"></script>`;
       const source = readFileSync("index.html", "utf8")
         .replace(/\s*<script\b[^>]*><\/script>/g, "")
         .replace("  </head>", `${cssLinks ? `${cssLinks}\n` : ""}  </head>`)
@@ -36,7 +36,7 @@ function staticHtmlPlugin(): Plugin {
 }
 
 export default defineConfig({
-  base: "./",
+  base: "/",
   plugins: [react(), tailwindcss(), tsconfigPaths(), staticHtmlPlugin()],
   build: {
     outDir: "dist",
