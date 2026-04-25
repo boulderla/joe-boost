@@ -36,7 +36,7 @@ function staticHtmlPlugin(): Plugin {
 }
 
 export default defineConfig({
-  base: "./",
+  base: "/",
   plugins: [react(), tailwindcss(), tsconfigPaths(), staticHtmlPlugin()],
   build: {
     outDir: "dist",
